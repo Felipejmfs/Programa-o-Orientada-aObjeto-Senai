@@ -3,10 +3,13 @@ export class Pagamento {
     #valor;
 
     constructor(valor) {
+        if(new.target === Pagamento){
+            throw new Error("Não é possível instanciar a classe abstrata Pagamento");
+        }
         this.#valor = valor
     }
 
-    get valor(){
+    get getvalor(){
         return this.#valor;
     }
 

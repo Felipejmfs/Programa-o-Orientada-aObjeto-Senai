@@ -12,6 +12,6 @@ export class PagamentoPix extends Pagamento{
     }
 
     processarPagamento() {
-        console.log(`Copie e cole a chave Pix: ${this.#chavePix}`);
+        console.log(`Copie e cole a chave Pix: ${this.#chavePix} no valor de ${this.getvalor}`);
     }
 }
